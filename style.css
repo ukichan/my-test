@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+}
+
+body {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-size: 12px;
+    color: #737373;
+}
+
+.team p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.team .title {
+    display: block;
+    font-size: clamp(14px, 2vw, 16px);
+    color: #252B42;
+}
+
+.our-team {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.our-team:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.our-team .social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.our-team .social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .our-team {
+        margin-bottom: 2rem;
+    }
+}
